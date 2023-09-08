@@ -1,0 +1,51 @@
+
+.title{
+		color:#00aaff;
+		text-align: center;//字体居中
+		font-size: 40rpx;//字体大小
+		font-weight: 700;//字体颜色深浅
+	font-family:"宋体";
+		margin-bottom: 100rpx;//
+		//border:1px solid green;//边框颜色
+		border-radius: 20rpx;//
+		margin:18rpx;
+		padding:5rpx ;//边框 宽 长
+		width: 100%;
+		line-height: 30rpx;//边框与文字之间的距离
+	}
+.pic{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 87vh;
+	.background{
+		border: 3px solid #7d7d7d;
+		  box-shadow: 0 0 45px rgba(38, 58, 58, 0.4);
+		border-radius: 25rpx;
+		   width: 550px;
+		      height: 330px;
+	  position: relative;
+	}
+	.bottom1{
+		opacity: 1;
+
+	}
+	.bottom2{
+		opacity: 1;
+	}
+}
+.container {
+  width: 100%;
+top:-150rpx;
+  position: relative;
+
+}
+
+.text {
+	width: 350px;
+  background-color: #e3e3e3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding:15px;
+  border-radius: 4px;
+}
+

@@ -1,0 +1,82 @@
+	* {
+		box-sizing: border-box;
+	}
+
+	page {
+		background: #f3f4f6;
+	}
+
+	.top {
+		height: 30%;
+		background-color: #3ac4ff;
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+	}
+
+	.wrap {
+		position: relative;
+		height: 100vh;
+	}
+
+	.zone {
+		/* overflow: hidden; */
+		line-height: 40rpx;
+		// background-color: #e6dce3;
+		margin: 5rpx;
+	}
+
+	.content {
+		top: 10%;
+		position: absolute;
+		width: 94%;
+		left: 3%;
+		right: 3%;
+		padding: 30rpx;
+		background-color: white;
+		border-radius: 40rpx;
+		box-shadow: 9px 9px 6px #e3e3e3;
+		padding:30rpx 30rpx;
+		.title {
+		  text-align: center;
+		  font-size: 55rpx;
+		  font-weight: 400;
+		  margin-bottom: 60rpx;
+		}
+		.roommate_info {
+			display: flex;
+			flex-direction: row;
+			flex: 3;
+			padding: 5rpx;
+			margin: 5rpx;
+
+			.img_box {
+				flex: 1;
+				.roommate_img{
+					height: 200rpx;
+					width: 200rpx;
+					border-radius: 20rpx;
+				}
+			}
+
+			.roommate_content {
+				flex: 2;
+				padding: 20rpx 70rpx;
+				max-height: 300rpx;
+				.name{
+					font-size: 34rpx;
+					font-weight: 700;
+					margin-right: 100rpx;
+					//padding-left: 20upx;
+					width: 100%;
+					color: #606266;
+				}
+				.other{
+					font-size: 30rpx;
+					font-weight: 500;
+					//padding-left: 60upx;
+					width: 100%;
+					color: #606266;
+				}
+			}
+		}
+	}

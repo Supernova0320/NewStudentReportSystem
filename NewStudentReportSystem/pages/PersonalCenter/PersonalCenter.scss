@@ -1,0 +1,188 @@
+	* {
+		box-sizing: border-box;
+	}
+	
+	page {
+		background: #f3f4f6;
+	}
+
+	.header {
+		//上面的整体边框
+		background: #f3f4f6;
+		height: 580upx; //上面的整体边框的高度
+		padding-bottom: 110upx;
+
+		.bg {
+			border-bottom-left-radius: 60%;
+			border-bottom-right-radius: 60%;
+			width: 100%;
+			height: 400upx;
+			padding-top: 125upx;
+			background-color:  #3ac4ff;
+		}
+		.bg2 {
+			border-bottom-left-radius: 60%;
+			border-bottom-right-radius: 60%;
+			width: 100%;
+			height: 400upx;
+			padding-top: 125upx;
+			background-color:   #75afaf;
+		}
+	} 
+		.select_title{
+			text-align: center;
+			font-size: 40rpx;
+			font-weight: 400;
+			margin: 30rpx;
+		} 
+	.ava_box {
+		margin-top: 5rpx;
+		margin-left: 70rpx;
+		margin-right: 70rpx;
+		display: flex;
+		flex-direction: row;
+		.avatar_img {
+			height: 300rpx;
+			width: 300rpx;
+			margin: 10rpx 10rpx;
+		}
+	}
+
+	.box {
+		//头像加周围边框
+		width: 650upx;
+		height: 410upx;
+		border-radius: 30upx;
+		margin: 0 auto;
+		background: #ffffff;
+		box-shadow: 0 5upx 20upx 0upx rgba(0, 0, 150, .2);
+		margin-top: 15rpx;
+
+		.box-hd {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			justify-content: center;
+			margin: 0 30rpx;
+
+			.avator {
+				//头像		
+				width: 220upx;
+				height: 220upx;
+				background: #f3f4f6;
+				border-radius: 50%;
+				margin-top: -75upx;
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.user_name {
+				//名字
+				width: 100%;
+				text-align: center;
+				font-size: 45rpx;
+				color: #303133;
+				font-weight: bold;
+				font-family: '';
+				padding-bottom: 20rpx;
+			}
+			.text_box {
+			  width: 100%;
+			  height: 16vh;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			}
+			
+			.user_name2 {
+			  font-weight: 500;
+			  font-size: 28px;
+			  color: #000000;
+			}
+
+			.hallo {
+				//简介
+				font-size: 32rpx;
+				font-weight: 500;
+				margin-bottom: 100rpx;
+				border-radius: 40rpx;
+				padding: 40rpx 100rpx;
+				line-height: 50rpx;
+				color: #606266;
+			}
+		}
+
+	}
+
+	.list-content {
+		///下面的整体边框
+		margin: 40rpx;
+		background: #f3f4f6;
+	}
+
+	.list {
+		//我的信息
+		border-radius: 35rpx;
+		width: 100%;
+		border-bottom: 15upx solid #f3f4f6;
+		background: #ffffff;
+
+		&:last-child {
+			border: none;
+		}
+
+		.li {
+			//图标旁边文字（我的信息...）的边框
+
+			width: 96%;
+			height: 120upx;
+			padding: 0 4%;
+			border-bottom: 1px solid rgb(243, 243, 243);
+			display: flex;
+			align-items: center;
+
+			&.noborder {
+				border-bottom: 0;
+			}
+
+			.icon {
+				//小图标
+				flex-shrink: 0;
+				width: 50upx;
+				height: 50upx;
+
+				image {
+					width: 50upx;
+					height: 50upx;
+				}
+			}
+
+			.text {
+				//文字
+				font-size: 34rpx;
+				font-weight: 500;
+				padding-left: 20upx;
+				width: 100%;
+				color: #666;
+			}
+
+			.to {
+				//右边箭头小图标
+				flex-shrink: 0;
+				width: 40upx;
+				height: 40upx;
+			}
+		}
+	}
+
+	.loginbtn {
+		  width: 80%;
+		  margin: auto;
+		  padding: 3px;
+		   margin-top: 160px;
+		  box-sizing: border-box;
+	}

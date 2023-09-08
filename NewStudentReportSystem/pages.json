@@ -1,0 +1,373 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"tabBar": {
+		"color": "#0f1011",
+		"selectedColor": "#2facfd",
+		"backgroundColor": "#f3f4f6",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/index.png",
+				"selectedIconPath": "static/head.png",
+				"text": "首页"
+			}, {
+				"pagePath": "pages/SchoolMap/SchoolMap",
+				"iconPath": "static/school1.png",
+				"selectedIconPath": "static/school.png",
+				"text": "校园"
+			},
+			{
+				"pagePath": "pages/serve/serve",
+				"iconPath": "static/serve11.png",
+				"selectedIconPath": "static/serve22.png",
+				"text": "服务"
+			},
+			{
+				"pagePath": "pages/PersonalCenter/PersonalCenter",
+				"iconPath": "static/myself.png",
+				"selectedIconPath": "static/myself2.png",
+				"text": "我的"
+			}
+
+		]
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+
+			}
+		}
+
+		, {
+			"path": "pages/PersonalCenter/PersonalCenter",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+
+		}
+
+		, {
+			"path": "pages/SchoolMap/SchoolMap",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/index_function/baodaoxuzhi/baodaoxuzhi",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index_function/baodaoliucheng/baodaoliucheng",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/index_function/jinfangzhapian/jinfangzhapian",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/FirstCanteen/index/index",
+			"style": {
+				"navigationBarTitleText": "第一食堂",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/PlumGarden/PlumGarden",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/PineGarden/PineGarden",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/SecondCanteen/index/index",
+			"style": {
+				"navigationBarTitleText": "第二食堂",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/FirstSchoolBuilding/FirstSchoolBuilding",
+			"style": {
+				"navigationStyle": "custom" // 隐藏系统导航栏
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/Playground1/Playground1",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/Playground2/Playground2",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/ThirdCanteen/index/index",
+			"style": {
+				"navigationBarTitleText": "第三食堂",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/SchoolMap_function/Library/Library",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/serve/serve",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/PersonalCenter_function/RetrievePassword/RetrievePassword1/RetrievePassword1",
+			"style": {
+				"navigationBarTitleText": "找回密码",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/serve_function/mall/mall",
+			"style": {
+				"navigationBarTitleText": "商城",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/PersonalCenter_function/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/PersonalCenter_function/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/PersonalCenter_function/MyMessage/MyMessage",
+			"style": {
+				"navigationBarTitleText": "我的信息",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/PersonalCenter_function/ChangePassword/ChangePassword",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/PersonalCenter_function/RetrievePassword/RetrievePassword2/RetrievePassword2",
+			"style": {
+				"navigationBarTitleText": "修改密码",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/SchoolMap_function/FirstCanteen/manu/manu",
+			"style": {
+				"navigationBarTitleText": "档口列表",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/SchoolMap_function/ThirdCanteen/manu/manu",
+			"style": {
+				"navigationBarTitleText": "档口列表",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/SchoolMap_function/SecondCanteen/manu/manu",
+			"style": {
+				"navigationBarTitleText": "档口列表",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/SchoolMap_function/SecondCanteen/search_detail/search_detail",
+			"style": {
+				"navigationBarTitleText": "菜单搜索详情",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/SchoolMap_function/FirstCanteen/search_detail/search_detail",
+			"style": {
+				"navigationBarTitleText": "菜单搜索详情",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/SchoolMap_function/ThirdCanteen/search_detail/search_detail",
+			"style": {
+				"navigationBarTitleText": "菜单搜索详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/PersonalCenter_function/update/update",
+			"style": {
+				"navigationBarTitleText": "个人信息修改界面",
+				"enablePullDownRefresh": false
+			}
+		}
+
+		, {
+			"path": "pages/PersonalCenter_function/myOrder/myOrder",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/forum/index/index",
+			"style": {
+				"navigationBarTitleText": "版块分类",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/SchoolMap_function/BambooGarden/BambooGarden",
+			"style": {
+				"navigationStyle": "custom"
+			}
+
+		},
+		{
+			"path": "pages/PersonalCenter_function/dormitory/SearchRoommate",
+			"style": {
+				"navigationBarTitleText": "查询舍友",
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+		, {
+			"path": "pages/forum/Post/Post",
+			"style": {
+				"navigationBarTitleText": "帖子",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/forum/reply/reply",
+			"style": {
+				"navigationBarTitleText": "评论区",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/forum/addPost/addPost",
+			"style": {
+				"navigationBarTitleText": "发帖",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/forum/PostMe/PostMe",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/serve_function/calender/calender",
+			"style": {
+				"navigationBarTitleText": "事项备忘录",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/serve_function/schedule/index/index",
+			"style": {
+				"navigationBarTitleText": "日程",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/forum/InitialPostMe/InitialPostMe",
+			"style": {
+				"navigationBarTitleText": "绑定论坛账户",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/forum/ChangePostMe/ChangePostMe",
+			"style": {
+				"navigationBarTitleText": "修改个人信息"
+			}
+		},
+		{
+			"path": "pages/forum/addReply/addReply",
+			"style": {
+				"navigationBarTitleText": "回复", //添加回复
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/serve_function/schedule/description/description",
+			"style": {
+				"navigationBarTitleText": "日程描述",
+
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/serve_function/study/study",
+			"style": {
+				"navigationBarTitleText": "学习",
+
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/serve_function/study/detail",
+			"style": {
+				"navigationBarTitleText": "课程详情",
+
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/serve_function/study/research",
+			"style": {
+				"navigationBarTitleText": "搜索结果",
+
+				"enablePullDownRefresh": false
+			}
+
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#f3f4f6"
+	},
+	"uniIdRouter": {}
+}

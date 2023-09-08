@@ -1,0 +1,142 @@
+	.swiper_box {
+		margin: 20rpx 35rpx
+	}
+
+	.goods_title {
+		text-align: center;
+		font-size: 40rpx;
+		font-weight: 400;
+		margin: 50rpx;
+	}
+
+	.title_box {
+		margin: 10rpx 45rpx;
+		padding: 0 5rpx;
+		line-height: 60rpx;
+		font-size: 34rpx;
+		font-weight: 700;
+		width: 100%;
+		color: #303133;
+	}
+
+	.u-form-item {
+		margin: 10rpx 30rpx;
+	}
+
+	.confirmInform {
+		margin: 50rpx 80rpx;
+	}
+	.goods_box {
+		margin: 20rpx 25rpx;
+		padding-bottom: 150rpx;
+
+		.goods_item {
+			margin: 25rpx;
+			display: flex;
+			flex-direction: row;
+			flex: 3;
+			background-color: #ffffff;
+			border-radius: 30rpx;
+			.img_box {
+				flex: 1.2;
+				border-radius: 30rpx;
+			}
+
+			.goods_content {
+				flex: 1.8;
+				padding: 20rpx;
+
+				.goods_name {					
+					margin: 25rpx 100rpx;
+					font-size: 34rpx;
+					font-weight: 700;
+					width: 100%;
+					color: #606266;
+				}					
+				.number{
+					margin: 35rpx 100rpx;
+					font-size: 30rpx;
+					font-weight: 500;
+					width: 100%;
+					color: #606266;
+				}
+				.price {
+					margin: 35rpx 100rpx;
+					font-size: 30rpx;
+					font-weight: 500;
+					width: 100%;
+					color: #606266;
+				}
+				
+				.goods_num_box{
+					margin:10rpx 80rpx;
+				}
+			}
+		}
+		.sum{
+			font-size: 34rpx;
+			font-weight: 700;
+			margin: 40rpx;
+			margin-left: 470rpx;
+			width: 100%;
+			color: #303133;
+		}
+	}
+
+	.navigation {
+		bottom: 20rpx;
+		position: fixed;
+		display: flex;
+		border: solid 2rpx #f2f2f2;
+		background-color: #f0f0f0;
+		padding: 16rpx;
+		padding-right: 290rpx;
+		border-radius: 30rpx;
+
+		.left {
+			display: flex;
+			font-size: 20rpx;
+			margin-left: 30rpx;
+			margin-right: 150rpx;
+
+			.item {
+				margin: 0 30rpx;
+
+				&.car {
+					text-align: center;
+					position: relative;
+
+					.car-num {
+						position: absolute;
+						top: -10rpx;
+						right: -10rpx;
+					}
+				}
+			}
+		}
+
+		.sum {
+			display: flex;
+			font-size: 32rpx;
+			align-items: center;
+		}
+
+		.right {
+			position: absolute;
+			display: flex;
+			font-size: 32rpx;
+			align-items: center;
+			padding: 0 530rpx;
+
+			.btn {
+				line-height: 66rpx;
+				padding: 0 30rpx;
+				border-radius: 36rpx;
+				color: #ffffff;
+			}
+
+			.buy {
+				background-color: #52d9fe;
+			}
+		}
+	}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script src="js/script.js"></script>
+
+<link rel="stylesheet" href="css/comon0.css">
+ <script src="js/axios.min.js"></script>
+  <!--<script>
+         setTimeout(function() {
+             location.reload();
+         }, 5000);
+     </script>-->
+</head>
+	<script>
+	$(window).load(function(){  
+             $(".loading").fadeOut()
+            })  
+			
+/****/
+$(document).ready(function(){
+	var whei=$(window).width()
+	$("html").css({fontSize:whei/20})
+	$(window).resize(function(){
+		var whei=$(window).width()
+	 $("html").css({fontSize:whei/20})
+});
+	});
+	</script>
+	<script type="text/javascript" src="js/echarts.min.js"></script> 
+	<script language="JavaScript" src="js/js.js"></script> 
+<body>
+<div class="canvas" style="opacity: .2">
+	<iframe frameborder="0" src="js/index.html" style="width: 100%; height: 100%"></iframe>
+	</div>
+
+<div class="head">
+  <h1>新生报到数据可视化</h1>
+  <div class="weather"><!--<img src="picture/weather.png"><span>多云转小雨</span>--><span id="showTime"></span></div>
+	
+	<script>
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       document.getElementById("showTime").innerHTML = y+"年"+mt+"月"+day+"日-"+h+"时"+m+"分"+s+"秒";
+       t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+	
+	
+</div>
+<div class="mainbox">
+	
+  <ul class="clearfix">
+    <li>
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">报道完成情况</div>
+        <div class="allnav" id="echart1"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 3.2rem">
+        <div class="alltitle">学生男女比例</div>
+        <div class="allnav" id="echart2"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 3.2rem"><div class="alltitle">学生民族比例</div>
+        <div id="fb1" style="height:100%; width: 100%;">
+		  <!--	<div class="sy" id="fb1"></div>-->
+				
+				<!--<div class="sy" id="fb2"></div>
+				<div class="sy" id="fb3"></div>-->
+		  </div>
+        <div class="boxfoot">
+			
+		  </div>
+      </div>
+    </li>
+    <li>
+      <div class="bar">
+        <div class="barbox">
+          <ul class="clearfix">
+            <li class="pulll_left counter" id="totalNumOfNewStudents"></li>
+            <li class="pulll_left counter" id="numOfRegisterdStudents"></li>
+          </ul>
+        </div>
+        <div class="barbox2">
+          <ul class="clearfix">
+            <li class="pulll_left">应到人数 </li>
+            <li class="pulll_left">实到人数</li>
+          </ul>
+        </div>
+      </div>
+      <div class="map">
+        <div class="map1"><img src="picture/lbx.png"></div>
+        <div class="map2"><img src="picture/jt.png"></div>
+        <div class="map3"><img src="picture/map.png"></div>
+        <div class="map4" id="map_1"></div>
+	
+		
+		<div class="tableContainer" >
+			 <div class="alltitle">地区新生人数TOP</div>
+		  <table class="tableWithMap" id="myTable" border="1" bgcolor="#a6baff" rules="all" width="100px">
+		    <thead align="center">
+		      <tr>
+		        <th>地区</th>
+		        <th>人数</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		      <!-- 表格数据行 -->
+		    </tbody>
+		  </table>
+		</div>
+		
+      </div>
+	  <div class="cont-div">
+	      
+	  </div>
+	  <div class="center-bottom">
+                <div class="chart-box">
+                    <div id="chart4" style="width:100%;height:95%;"></div>
+                </div>
+                <div class="city-data">
+                   
+                    <ul class="ranking-box">
+                        <!--<li><span></span>
+                            <p>城市</p>
+                            <p>新生人数</p>
+                        </li>
+                       -->
+                    </ul>
+                   
+                </div>
+            </div>
+    </li>
+    <li>
+          <div class="boxall" style="height: 4.9rem;">
+        <div class="alltitle">兴趣分布</div>
+        <div class="allnav" id="echart4"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <div class="boxall" style="height: 4.7rem">
+        <div class="alltitle">专业报到人数</div>
+        <div class="allnav" id="echart5"></div>
+        <div class="boxfoot"></div>
+      </div>
+      <!--<div class="boxall" style="height: 3rem">
+        <div class="alltitle">模块标题样式</div>
+        <div class="allnav" id="echart6"></div>
+        <div class="boxfoot"></div>-->
+      </div>
+    </li>
+  </ul>
+</div>
+<div class="back"></div>
+
+
+<script type="text/javascript" src="js/china.js"></script> 
+<script type="text/javascript" src="js/area_echarts.js"></script> 
+</body>
+</html>

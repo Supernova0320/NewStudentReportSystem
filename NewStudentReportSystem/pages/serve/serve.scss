@@ -1,0 +1,49 @@
+	page{
+		background: #f3f4f6;
+	}
+	.content {
+top: 12%;
+		position: absolute;
+		width: 96%;
+		left: 2%;
+		right: 5%;
+		padding: 30rpx;
+		border-radius: 40rpx;
+		.function_box{
+			margin: 100rpx 10rpx;
+			.function{
+				display: flex;
+				flex-direction: row;
+				border-radius: 35rpx;
+				margin:30rpx;
+				padding:13rpx 95rpx;
+				background:#ffffff;
+				box-shadow: 0 1upx 10upx 0upx rgba(0, 0, 150, .2);
+				.serve_icon{
+					height: 90rpx;
+					width: 90rpx;
+					margin: 30rpx 17rpx;
+				}
+				.serve_text{
+					font-weight: 700;
+					font-size: 40rpx;
+					margin: 50rpx 50rpx
+				}
+			}
+		}
+	}
+	.title{
+		color:#00aaff;
+		text-align: center;//字体居中
+		font-size: 60rpx;//字体大小
+		font-weight: 700;//字体颜色深浅
+	font-family:"宋体";
+		margin-bottom:100rpx;//
+		border:1px solid green;//边框颜色
+		border-radius: 20rpx;//
+		margin:18rpx;
+	padding: 40rpx 9rpx;
+		width: 100%;
+		line-height: 30rpx;//边框与文字之间的距离
+	}
+	
